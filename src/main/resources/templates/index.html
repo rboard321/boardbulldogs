@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Bulldogs - Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Custom styles */
+        .carousel-section {
+            max-width: 800px; /* Set a max width for the carousel */
+            margin: 0 auto; /* Center the carousel */
+            padding-bottom: 20px; /* Add some space between the carousel and footer */
+        }
+        .carousel-item img {
+            max-height: 400px; /* Set a max height for the images */
+            object-fit: cover; /* Ensure images cover the area without distortion */
+            width: 100%; /* Make sure the images are responsive */
+        }
+        footer {
+            text-align: center; /* Center-align the footer text */
+            padding: 10px 0; /* Add some padding to the footer */
+            background-color: #f8f9fa; /* Optional: Add a background color to the footer */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Board Bulldogs</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/dogs">Available Dogs</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Your Perfect Bulldog Awaits</h2>
+        <p>Find your new best friend from our selection of beautiful bulldogs.</p>
+        <a href="/dogs" class="btn btn-primary">View Available Dogs</a>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div id="bulldogCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bulldogCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bulldogCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bulldogCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/bulldog1.jpg" class="d-block w-100" alt="Bulldog 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bulldog2.jpg" class="d-block w-100" alt="Bulldog 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/bulldog3.jpg" class="d-block w-100" alt="Bulldog 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bulldogCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bulldogCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Dogs Section -->
+    <section class="featured-dogs">
+        <h3>Featured Bulldogs</h3>
+        <div class="dog-list">
+            <div class="dog">
+                <img src="/images/bulldog1.jpg" alt="Sample Dog">
+                <h4>Max</h4>
+                <p>Breed: English Bulldog</p>
+                <a href="/dogs/1" class="btn btn-secondary">View Details</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Board Bulldogs. All rights reserved.</p>
+</footer>
+</body>
+</html>
